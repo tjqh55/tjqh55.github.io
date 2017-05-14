@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>md파일blog포스팅 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://tjqh55.github.io/index.html">
+  <meta name="description" content="MarkDown GitHub사용해서 블로그 올리기Mac에서는 GitHub 로그인 후create new repository  Repository name 부분에 자신의id.github.io.git으로 하고 Create repository를한다. 노드가 없다면 설치 1brew install node 노드 설치후 hexo-cli를 ( -g 옵션: 글로벌하게 사용">
+<meta property="og:type" content="article">
+<meta property="og:title" content="md파일blog포스팅">
+<meta property="og:url" content="http://tjqh55.github.io/2017/05/14/mdfileToblog/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="MarkDown GitHub사용해서 블로그 올리기Mac에서는 GitHub 로그인 후create new repository  Repository name 부분에 자신의id.github.io.git으로 하고 Create repository를한다. 노드가 없다면 설치 1brew install node 노드 설치후 hexo-cli를 ( -g 옵션: 글로벌하게 사용">
+<meta property="og:image" content="http://tjqh55.github.io/Users/seobomin/Downloads/github.png">
+<meta property="og:updated_time" content="2017-05-14T14:56:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="md파일blog포스팅">
+<meta name="twitter:description" content="MarkDown GitHub사용해서 블로그 올리기Mac에서는 GitHub 로그인 후create new repository  Repository name 부분에 자신의id.github.io.git으로 하고 Create repository를한다. 노드가 없다면 설치 1brew install node 노드 설치후 hexo-cli를 ( -g 옵션: 글로벌하게 사용">
+<meta name="twitter:image" content="http://tjqh55.github.io/Users/seobomin/Downloads/github.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-mdfileToblog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-mdfileToblog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/05/14/mdfileToblog/" class="article-date">
   <time datetime="2017-05-14T14:53:36.000Z" itemprop="datePublished">2017-05-14</time>
@@ -74,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/14/mdfileToblog/">md파일blog포스팅</a>
+    <h1 class="article-title" itemprop="name">
+      md파일blog포스팅
     </h1>
   
 
@@ -116,183 +120,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-uploading-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/13/uploading-1/" class="article-date">
-  <time datetime="2017-05-13T08:16:47.000Z" itemprop="datePublished">2017-05-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/13/uploading-1/">uploading</a>
-    </h1>
+    <a href="/2017/05/13/uploading-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">uploading</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="MarkDown-GitHub사용해서-블로그-올리기"><a href="#MarkDown-GitHub사용해서-블로그-올리기" class="headerlink" title="MarkDown GitHub사용해서 블로그 올리기"></a>MarkDown GitHub사용해서 블로그 올리기</h1><p>GitHub 로그인 후<br>create new repository</p>
-<p>id.github.io.git</p>
-<p>노드가 없다면 설치<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install node</div></pre></td></tr></table></figure></p>
-<pre><code>npm install hexo-cli -g
-</code></pre><p>ssh<br>git clone <a href="https://github.com/tjqh55/tjqh55.github.io.git" target="_blank" rel="external">https://github.com/tjqh55/tjqh55.github.io.git</a> 해당디렉토리</p>
-<p>echo “Hello World” &gt;&gt; index.html</p>
-<p>git add .<br>git commit -m ‘firstpush’<br>git push origin master</p>
-<p>깃 주소(tjqh55.github.io)로 접속하면 Hello World가 떠짐 </p>
-<p>hexo init 해당디렉토리 </p>
-<p>해당 디렉토리 이동후 _config.yml</p>
-<p>language : ko-KR<br>timezone : Asia/Seoul<br>url: <a href="http://tjqh55.github.io">http://tjqh55.github.io</a><br>deploy:<br>    type : git<br>    repo : git Address<br>:wq</p>
-<p>hexo server 명령어 친후 chrome에 localhost:4000접속</p>
-<p>npm install –save hexo-deployer-git 설치후 </p>
-<p>hexo deploy –generate      올릴 걸 만듬</p>
-<p>예전 기록이 뜨면 방문기록 삭제 후 블로그 주소 다시 접속</p>
-<p>테마적용<br>hexo.io     aloha 폰트 변경<br>theme 접속후 자신의 마음에드는 테마를 선택후 해당디렉토리에서 git clone<br>_config.yml 파일에 들어가서<br>theme : 자신의 폰트 이름</p>
-<p>hexo deploy –generate</p>
-<p>hexo new draft first     -&gt; .md파일을 생성(source디렉토리 밑)</p>
-<p>포스팅<br>hexo publish md파일 이름<br>hexo deploy<br>hexo generate<br>hexo deploy</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tjqh55.github.io/2017/05/13/uploading-1/" data-id="cj2otw74x0003fu6gu6ygdfg5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-upload" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/13/upload/" class="article-date">
-  <time datetime="2017-05-13T08:15:05.000Z" itemprop="datePublished">2017-05-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/13/upload/">upload</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tjqh55.github.io/2017/05/13/upload/" data-id="cj2otw74s0001fu6ggqosiprk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/13/first/" class="article-date">
-  <time datetime="2017-05-13T08:04:38.000Z" itemprop="datePublished">2017-05-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/13/first/">first</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>fisrt test</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tjqh55.github.io/2017/05/13/first/" data-id="cj2otw74n0000fu6go0jxgoyo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/13/hello-world/" class="article-date">
-  <time datetime="2017-05-13T07:42:59.000Z" itemprop="datePublished">2017-05-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tjqh55.github.io/2017/05/13/hello-world/" data-id="cj2otw74y0004fu6g02zbss4x" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
