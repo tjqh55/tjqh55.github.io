@@ -120,61 +120,6 @@
 
 
   
-    <article id="post-uploading-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/13/uploading-1/" class="article-date">
-  <time datetime="2017-05-13T08:16:47.000Z" itemprop="datePublished">2017-05-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/13/uploading-1/">uploading</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="MarkDown-GitHub사용해서-블로그-올리기"><a href="#MarkDown-GitHub사용해서-블로그-올리기" class="headerlink" title="MarkDown GitHub사용해서 블로그 올리기"></a>MarkDown GitHub사용해서 블로그 올리기</h1><p>GitHub 로그인 후<br>create new repository</p>
-<p>id.github.io.git</p>
-<p>노드가 없다면 설치<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install node</div></pre></td></tr></table></figure></p>
-<pre><code>npm install hexo-cli -g
-</code></pre><p>ssh<br>git clone <a href="https://github.com/tjqh55/tjqh55.github.io.git" target="_blank" rel="external">https://github.com/tjqh55/tjqh55.github.io.git</a> 해당디렉토리</p>
-<p>echo “Hello World” &gt;&gt; index.html</p>
-<p>git add .<br>git commit -m ‘firstpush’<br>git push origin master</p>
-<p>깃 주소(tjqh55.github.io)로 접속하면 Hello World가 떠짐 </p>
-<p>hexo init 해당디렉토리 </p>
-<p>해당 디렉토리 이동후 _config.yml</p>
-<p>language : ko-KR<br>timezone : Asia/Seoul<br>url: <a href="http://tjqh55.github.io">http://tjqh55.github.io</a><br>deploy:<br>    type : git<br>    repo : git Address<br>:wq</p>
-<p>hexo server 명령어 친후 chrome에 localhost:4000접속</p>
-<p>npm install –save hexo-deployer-git 설치후 </p>
-<p>hexo deploy –generate      올릴 걸 만듬</p>
-<p>예전 기록이 뜨면 방문기록 삭제 후 블로그 주소 다시 접속</p>
-<p>테마적용<br>hexo.io     aloha 폰트 변경<br>theme 접속후 자신의 마음에드는 테마를 선택후 해당디렉토리에서 git clone<br>_config.yml 파일에 들어가서<br>theme : 자신의 폰트 이름</p>
-<p>hexo deploy –generate</p>
-<p>hexo new draft first     -&gt; .md파일을 생성(source디렉토리 밑)</p>
-<p>포스팅<br>hexo publish md파일 이름<br>hexo deploy<br>hexo generate<br>hexo deploy</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://tjqh55.github.io/2017/05/13/uploading-1/" data-id="cj2otw74x0003fu6gu6ygdfg5" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-upload" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/05/13/upload/" class="article-date">
@@ -324,10 +269,6 @@
         
           <li>
             <a href="/2017/05/14/mdfileToblog/">md파일blog포스팅</a>
-          </li>
-        
-          <li>
-            <a href="/2017/05/13/uploading-1/">uploading</a>
           </li>
         
           <li>
