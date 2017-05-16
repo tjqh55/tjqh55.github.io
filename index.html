@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://tjqh55.github.io"></form>
@@ -88,29 +88,38 @@
 <p><img src="/Users/seobomin/Downloads/github.png" alt=""></p>
 <p>Repository name 부분에 자신의id.github.io.git으로 하고 Create repository를한다.</p>
 <p>노드가 없다면 설치</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install node</div></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install node</div></pre></td></tr></table></figure>
 <p>노드 설치후 hexo-cli를 ( -g 옵션: 글로벌하게 사용) 사용하기 위해 설치</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">``` </div><div class="line"></div><div class="line">git에서 ssh를 지정해준다.</div><div class="line">![](/Users/seobomin/Downloads/ssh.JPG)</div><div class="line"></div><div class="line">지정을 한 후</div><div class="line">터미널에서 git clone을 진행한다.</div></pre></td></tr></table></figure>
-<p>git clone <a href="https://github.com/tjqh55/tjqh55.github.io.git" target="_blank" rel="external">https://github.com/tjqh55/tjqh55.github.io.git</a> 해당디렉토리<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">해당 디렉토리로 이동을 한 후 test를 하기위해 index.html파일에 Hello World를 저장</div></pre></td></tr></table></figure></p>
-<p>echo “Hello World” &gt;&gt; index.html<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">이제 index.html를 git에 올릴 차례</div></pre></td></tr></table></figure></p>
-<p>git add . </p>
-<p>git commit -m ‘firstpush’</p>
-<p>git push origin master</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">git 주소(자신의ID.github.io)로 접속하면 Hello World가 뜬다.</div><div class="line"></div><div class="line">![](/Users/seobomin/Downloads/index.JPG)</div><div class="line"></div><div class="line"></div><div class="line">express로 해당디렉토리를 설정한다.</div></pre></td></tr></table></figure>
-<p>hexo init 해당디렉토리<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">해당 디렉토리 이동을 하게되면 여러 파일이 생긴걸 볼수 있다.</div><div class="line">여러개의 파일 중 _config.yml에 들어가서 이 부분을 고쳐준다.</div></pre></td></tr></table></figure></p>
-<p>language : ko-KR<br>timezone : Asia/Seoul<br>url: <a href="http://자신의ID.github.io" target="_blank" rel="external">http://자신의ID.github.io</a><br>deploy:<br>    type : git<br>    repo : git Address<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">고쳐준 뒤에</div></pre></td></tr></table></figure></p>
-<p>hexo server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">명령어 친후 chrome에서 localhost:4000접속</div></pre></td></tr></table></figure></p>
-<p>npm install –save hexo-deployer-git<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">설치한다.</div></pre></td></tr></table></figure></p>
-<p>hexo deploy –generate 명령어를 사용해 git에 올릴 파일을 만든다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">**예전 기록이 뜨면 방문기록 삭제 후 블로그 주소 다시 접속**</div><div class="line"></div><div class="line"></div><div class="line">##테마적용</div><div class="line">www.hexo.io홈페이지의 theme 접속후 자신의 마음에드는 테마를 선택후 해당디렉토리에서 git clone한다.</div><div class="line">테마를 적용해주기 위해_config.yml 파일에 들어가서</div></pre></td></tr></table></figure></p>
-<p>theme : 자신의 폰트 이름<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">theme를 고쳐준다.</div></pre></td></tr></table></figure></p>
-<p>hexo deploy –generate<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"> </div></pre></td></tr></table></figure></p>
-<p>hexo new draft first     -&gt; .md파일을 생성(source디렉토리 밑)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">##포스팅 방법</div></pre></td></tr></table></figure></p>
-<p>hexo publish md파일 이름<br>hexo deploy –generate<br>```</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">``` </div><div class="line"></div><div class="line"></div><div class="line">git에서 ssh를 지정해준다.</div><div class="line">![](/Users/seobomin/Downloads/ssh.JPG)</div><div class="line"></div><div class="line">지정을 한 후</div><div class="line">터미널에서 git <span class="built_in">clone</span>을 진행한다.</div><div class="line"></div><div class="line"></div><div class="line">```sh</div><div class="line">git <span class="built_in">clone</span> https://github.com/tjqh55/tjqh55.github.io.git 해당디렉토리</div></pre></td></tr></table></figure>
+<p>해당 디렉토리로 이동을 한 후 test를 하기위해 index.html파일에 Hello World를 저장</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"Hello World"</span> &gt;&gt; index.html</div></pre></td></tr></table></figure>
+<p>이제 index.html를 git에 올릴 차례</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git add . </div><div class="line"></div><div class="line">git commit -m <span class="string">'firstpush'</span></div><div class="line"></div><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>git 주소(자신의ID.github.io)로 접속하면 Hello World가 뜬다.</p>
+<p><img src="/Users/seobomin/Downloads/index.JPG" alt=""></p>
+<p>express로 해당디렉토리를 설정한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init 해당디렉토리</div></pre></td></tr></table></figure>
+<p>해당 디렉토리 이동을 하게되면 여러 파일이 생긴걸 볼수 있다.<br>여러개의 파일 중 _config.yml에 들어가서 이 부분을 고쳐준다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">language : ko-KR</div><div class="line">timezone : Asia/Seoul</div><div class="line">url: http://자신의ID.github.io</div><div class="line">deploy:</div><div class="line">	type : git</div><div class="line">	repo : git Address</div></pre></td></tr></table></figure>
+<p>고쳐준 뒤에 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
+<p>명령어 친후 chrome에서 localhost:4000접속</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo-deployer-git</div></pre></td></tr></table></figure>
+<p>설치한다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy --generate 명령어를 사용해 git에 올릴 파일을 만든다.</div></pre></td></tr></table></figure>
+<p><strong>예전 기록이 뜨면 방문기록 삭제 후 블로그 주소 다시 접속</strong></p>
+<p>##테마적용<br>www.hexo.io홈페이지의 theme 접속후 자신의 마음에드는 테마를 선택후 해당디렉토리에서 git clone한다.<br>테마를 적용해주기 위해_config.yml 파일에 들어가서</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme : 자신의 폰트 이름</div></pre></td></tr></table></figure>
+<p>theme를 고쳐준다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy --generate</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new draft first 	-&gt; .md파일을 생성(source디렉토리 밑)</div></pre></td></tr></table></figure>
+<p>##포스팅 방법</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo publish md파일 이름</div><div class="line">hexo deploy --generate</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tjqh55.github.io/2017/05/15/hexo사용법/" data-id="cj2oue4k90000o96ggxk569kj" class="article-share-link">Partager</a>
+      <a data-url="http://tjqh55.github.io/2017/05/15/hexo사용법/" data-id="cj2oue4k90000o96ggxk569kj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,7 +154,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -166,7 +175,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
